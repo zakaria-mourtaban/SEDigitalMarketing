@@ -1,0 +1,165 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: "Noto Sans";
+}
+
+.navlogo {
+	width: 150px;
+	height: 150px;
+}
+
+.navlogo > img {
+	width: 100%;
+	height: 100%;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0% 3% 0% 3%;
+}
+
+nav > button {
+	background-color: #64a5f9;
+	border: black 0px;
+	width: 185px;
+	height: 50px;
+	border-radius: 15px;
+	font-weight: 500;
+	font-size: 1rem;
+	color: white;
+}
+
+.navatags {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 100px;
+}
+
+.navatags > a {
+	font-size: larger;
+	text-decoration: none;
+	color: black;
+	font-weight: 600;
+}
+
+.hero {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	gap: 5vh;
+	height: 70vh;
+}
+
+.hero h1 {
+	font-size: 5em;
+	background: linear-gradient(180deg, #21dadb, #5e7dea);
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.hero h3 {
+	font-size: 2em;
+	background: linear-gradient(180deg, #21dadb, #5e7dea);
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.hero > div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 5vh;
+	height: 60vh;
+}
+
+.hero > svg {
+	width: 50px;
+	height: 50px;
+	opacity: 1;
+}
+
+.services {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 85vh;
+}
+
+.services > div {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: first baseline;
+	gap: 25px;
+}
+
+.service {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	gap: 25px;
+	max-width: 12vw;
+	min-width: 12vw;
+}
+
+.service > svg {
+	width: 60px;
+	height: 60px;
+}
+
+.service > h5 {
+	font-size: 1rem;
+	font-weight: 400;
+}
+
+@media screen and (max-width: 450px) {
+	.navatags > a {
+		display: none;
+	}
+
+	nav {
+	padding: 0px 20px 0px 20px;
+	}
+	nav > button {
+		width: 100px;
+		height: 50px;
+		font-size: 14px;
+	}
+	.hero
+	{
+		text-align: center;
+	}
+	.hero h1
+	{
+		font-size: 2.5rem;
+	}
+	.hero h3
+	{
+		font-size: 1rem;
+	}
+	.services
+	{
+		height: 180vh;
+		width: 100%;
+	}
+	.services > div
+	{
+		flex-direction: column;
+	}
+	.service
+	{
+		max-width: 100%;
+		height: 33vh;
+		justify-content: center;
+	}
+}
