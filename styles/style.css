@@ -95,9 +95,13 @@ nav > button {
 	height: 100vh;
 }
 
-.expertise > h1
-{
+.expertise > h1 {
 	font-size: 5rem;
+}
+
+.whysection > h1 {
+	font-size: 5rem;
+	margin-bottom: 15vh;
 }
 
 .expertise > div {
@@ -129,44 +133,115 @@ nav > button {
 	font-weight: 400;
 }
 
+.whysection {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 300vh;
+}
+
+.whysection > div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 5vw;
+}
+
+.whyimg,
+.whyinfo {
+	width: 47vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.whyimg > img {
+	max-width: 80%;
+	box-shadow: rgba(77, 148, 230, 0.4) -15px 15px,
+		rgba(77, 148, 230, 0.3) -30px 30px, rgba(77, 148, 230, 0.05) -45px 45px;
+}
+
+.whyinfo {
+	flex-direction: column;
+	text-align: center;
+}
+
+.whyinfo > div {
+	width: 30vw;
+}
+
 @media screen and (max-width: 450px) {
 	.navatags > a {
 		display: none;
 	}
 
 	nav {
-	padding: 0px 20px 0px 20px;
+		padding: 0px 20px 0px 20px;
 	}
+
 	nav > button {
 		width: 100px;
 		height: 50px;
 		font-size: 14px;
 	}
-	.hero
-	{
+
+	.hero {
 		text-align: center;
 	}
-	.hero h1
-	{
+
+	.hero h1 {
 		font-size: 2.5rem;
 	}
-	.hero h3
-	{
+
+	.hero h3 {
 		font-size: 1rem;
 	}
-	.expertise
-	{
+
+	.expertise {
 		height: 180vh;
 		width: 100%;
 	}
-	.expertise > div
-	{
+
+	.expertise > div {
 		flex-direction: column;
 	}
-	.expertiseitem
-	{
+
+	.expertiseitem {
 		max-width: 100%;
 		height: 33vh;
 		justify-content: center;
+	}
+
+	.whysection {
+		height: 200vh;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.whyinfo {
+		text-align: center;
+		height: 25vh;
+	}
+
+	.whyinfo > div {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		width: 100%;
+	}
+
+	.whyinfo h2 {
+		font-size: 1rem;
+	}
+
+	.whyinfo h5 {
+		width: 60%;
+		font-size: 0.7rem;
+	}
+
+	.whyinfo > div {
+		flex-direction: column;
 	}
 }
