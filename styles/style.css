@@ -22,7 +22,7 @@ nav {
 	padding: 0% 3% 0% 3%;
 }
 
-nav > button {
+nav > button , .levelup > button{
 	background-color: #64a5f9;
 	border: black 0px;
 	width: 185px;
@@ -165,10 +165,24 @@ nav > button {
 .whyinfo {
 	flex-direction: column;
 	text-align: center;
+	gap: 10px;
 }
 
 .whyinfo > div {
-	width: 30vw;
+	width: 25vw;
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+}
+
+.levelup
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 110vh;
+	gap: 5vh;
 }
 
 @media screen and (max-width: 450px) {
