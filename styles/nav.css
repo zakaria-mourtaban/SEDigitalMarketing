@@ -1,0 +1,46 @@
+.navlogo {
+	width: 150px;
+	height: 150px;
+}
+
+.navlogo > img {
+	width: 100%;
+	height: 100%;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0% 3% 0% 3%;
+}
+
+nav > a,
+.levelup > a {
+	background-color: #64a5f9;
+	border: black 0px;
+	width: 185px;
+	height: 50px;
+	border-radius: 15px;
+	font-weight: 500;
+	font-size: 1rem;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+
+.navatags {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 100px;
+}
+
+.navatags > a {
+	font-size: larger;
+	text-decoration: none;
+	color: black;
+	font-weight: 600;
+}

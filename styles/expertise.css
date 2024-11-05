@@ -1,0 +1,45 @@
+.expertise {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 20vh;
+	height: 100vh;
+}
+
+.expertise > h1 {
+	font-size: 5rem;
+}
+
+.expertise > div {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: first baseline;
+	gap: 25px;
+}
+
+.expertise > div > h1 {
+	display: none;
+}
+
+.expertiseitem {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	gap: 25px;
+	max-width: 12vw;
+	min-width: 12vw;
+}
+
+.expertiseitem > svg {
+	width: 60px;
+	height: 60px;
+}
+
+.expertiseitem > h5 {
+	font-size: 1rem;
+	font-weight: 400;
+}
