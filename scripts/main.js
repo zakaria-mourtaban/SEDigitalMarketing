@@ -1,11 +1,5 @@
 const arrowdownhero = document.querySelector(".hero svg");
 let previousY = window.scrollY;
-// document.getElementById("ourworkbtn").addEventListener("click", () => {
-// 	document.getElementById('whyus').scrollIntoView({ behavior: 'smooth' });
-// });
-// document.getElementById("aboutusbtn").addEventListener("click", () => {
-// 	document.getElementById('expertise').scrollIntoView({ behavior: 'smooth' });
-// });
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(CustomEase);
 gsap.to(".hero svg", {
@@ -36,7 +30,6 @@ gsap.to(".hero svg", {
 		}
 	);
 });
-
 if (screen.width > 450) {
 	gsap.fromTo(
 		".levelup > h2",
@@ -80,7 +73,6 @@ if (screen.width > 450) {
 		}
 	);
 }
-
 //arrow fade
 arrowdownhero.style.opacity = 1;
 window.addEventListener("scroll", () => {
